@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style > .parent{
+ 		align-items: center;
+ 		display: flex;
+ 		flex-direction: row;
+ 		justify-content: space-between;
+ 		
+ } 
+ 	.child{
+ 		background : #aaaa;
+ 		border: 10px  solid yellow;
+ 		width: 120px;
+ 		padding: 12px;
+ 		height: 10px;
+ 		justify-content: space-between;
+ 	}/* for small case screen */
+@media only screen and (min-width: 330px) and 
+ 		 (max-width :480px){ 
+
+ 	.child{
+ 		 
+ 		width: 700px;
+ 		 font-size: 25px;
+ 		 background :yellow;
+ 	}
+
+ 		}
+ 		/* medium dcale devices*/
+ 		@media only screen and (min-width: 481px)and(max-width: 767px){
+ 			.child{
+ 				width: 120px;
+ 				font-weight: 400px;
+ 				border : 3px solid green;
+ 				border-radius: 10px;
+ 				box-shadow: 3px 3px 3px rgb(11,22,33);
+ 			}
+ 		}
+ 		/*large scale*/
+ 		@media only screen and (min-width:360px) and (max-width:1024px){
+ 		.child{
+ 			width: 25%;
+ 			box-shadow: 8px 8px 8px -8px #000;
+ 			color: blue;
+ 		}
+ 		}
+ 	
+ </style>
+ <meta charset="utf-8">
+<meta name="viewport"
+content="widith = device-widith,initial-scale=0"></head>
+<body>
+	<section class="parent">
+	<article class="child">America </article>
+	<article class="child">Belgium</article>
+	<article class="child">Canada</article>
+		<article class="child">Delhi</article>
+
+	</section>
+	
+
+ 
